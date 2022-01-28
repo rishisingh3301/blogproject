@@ -14,6 +14,5 @@ def allblogs(request):
         if Name!="" and blog!="":
             variable=blogtable(name=Name, blogcontent=blog)
             variable.save()
-
         content=blogtable.objects.all()
         return render(request, "allblogs.html", {"allblog":content})
