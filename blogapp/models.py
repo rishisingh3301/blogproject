@@ -8,4 +8,4 @@ class blogtable(models.Model):
     blogcontent = models.CharField(max_length=100000)
 
     def __str__(self):
-        return self.name + " - " + self.blogcontent
+        return self.name + " - - " + self.blogcontent
