@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>YOUR {{name}}!!!</h1>
+
+<form action="allblogs" method='POST'>
+    {% csrf_token %}
+    Enter your NAME: <input type="text" name="nameinput"><br>
+    Write your BLOG: <input type="text" name="bloginput"><br>
+    <input type="submit">
+</form>
+
+
+{% endblock %}
